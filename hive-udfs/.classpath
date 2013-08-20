@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="lib" path="lib/hadoop-ant-2.0.0-mr1-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hadoop-core-2.0.0-mr1-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hadoop-examples-2.0.0-mr1-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hadoop-test-2.0.0-mr1-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hadoop-tools-2.0.0-mr1-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hive-cli-0.10.0-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hive-common-0.10.0-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hive-contrib-0.10.0-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hive-builtins-0.10.0-cdh4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hive-exec-0.10.0-cdh4.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-hdfs-2.0.0-cdh4.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-annotations-2.0.0-cdh4.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-auth-2.0.0-cdh4.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-common-2.0.0-cdh4.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

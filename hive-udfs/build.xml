@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!-- 一个项目,可包含很多任务组(target) -->
+<project default="jar" basedir=".">
+	<!-- 项目中的一个任务组,可包含很多任务(task:javac,java...) -->
+	
+	<path id="classpath">
+		<pathelement location="."/>
+		<pathelement location="build/classes"/>
+		<pathelement path="D:\\eclipse\\hive-udfs\\lib\\hive-exec-0.10.0-cdh4.2.0.jar"/>
+		<pathelement path="D:\\eclipse\\hive-udfs\\lib\\hadoop-common-2.0.0-cdh4.2.0.jar"/>
+		<pathelement path="D:\\eclipse\\hive-udfs\\lib\\commons-logging-1.1.1.jar"/>
+		<pathelement path="D:\\eclipse\\hive-udfs\\lib\\hadoop-core-2.0.0-mr1-cdh4.2.0.jar"/>
+		<pathelement path="D:\\eclipse\\hive-udfs\\lib\\hadoop-annotations-2.0.0-cdh4.2.0.jar"/>
+	</path>
+	
+	<target name="init">
+		<delete dir="build"/>
+		<mkdir dir="build/classes"/>
+		<mkdir dir="build/lib"/>
+	</target>
+	
+	<target name="build" depends="init">
+		<!--编译-->
+		  
+		<javac srcdir="src\com\ttpod\stat\hive" destdir="build\classes">
+			<classpath refid="classpath"/>
+		</javac> 
+	</target>
+	
+	<target name="jar" depends="build">
+		<jar jarfile="build\lib\hive-udfs-ttpod-stat.jar" basedir="build\classes"></jar>
+	</target>
+	
+</project>
